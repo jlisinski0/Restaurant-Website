@@ -1,8 +1,10 @@
+import Nav from './components/Nav/Nav'
+
 function App() {
 	return (
-		<div>
-			<h1>elo</h1>
-		</div>
+		<>
+			<Nav />
+		</>
 	)
 }
 
