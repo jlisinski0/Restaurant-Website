@@ -1,4 +1,7 @@
 import MenuBar from './MenuBar'
+import MenuDish from './MenuDish'
+
+
 
 export default function Menu() {
 	return (
@@ -8,10 +11,8 @@ export default function Menu() {
 				<div className='flex justify-center items-center w-full h-12 px-5 '>
 					<MenuBar />
 				</div>
-				<div>
-					<div>
-						<div></div>
-					</div>
+				<div className='w-full h-150 px-5 mt-5'>
+					<MenuDish/>
 				</div>
 			</div>
 		</section>
