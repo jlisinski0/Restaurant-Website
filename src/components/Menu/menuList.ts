@@ -5,41 +5,39 @@ import zurek from '../../../public/zurek.png'
 
 interface MenuItem {
 	id: number
-	category: string
+	category: 'Obiady' | 'Drinki' | 'Desery' | 'all'
 	name: string
 	cost: number
-	img: any
+	img: string | any
 }
-
-
 
 export const menuList: MenuItem[] = [
 	{
 		id: 1,
-		category: 'dinner',
+		category: 'Obiady',
 		name: 'Kotlet schabowy',
 		cost: 24,
-		img: { kotlet },
+		img: kotlet,
 	},
 	{
 		id: 2,
-		category: 'dinner',
+		category: 'Obiady',
 		name: 'Gołabki z ziemniakami',
 		cost: 55,
-		img: { golabek },
+		img: golabek,
 	},
 	{
 		id: 3,
-		category: 'dinner',
+		category: 'Drinki',
 		name: 'Zrazy z ziemniakami',
 		cost: 45,
-		img: { zraz },
+		img: zraz,
 	},
 	{
 		id: 4,
-		category: 'dinner',
+		category: 'Desery',
 		name: 'Żurek z jajkiem',
 		cost: 65,
-		img: { zurek },
+		img: zurek,
 	},
 ]
