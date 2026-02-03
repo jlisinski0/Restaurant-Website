@@ -5,11 +5,11 @@ interface MenuDishProps {
 	filteredMenu: MenuItemType[]
 }
 
-export default function MenuDish({filteredMenu}: MenuDishProps) {
+export default function MenuDish({ filteredMenu }: MenuDishProps) {
 	return (
-		<div className='bg-snowWhite w-full h-full rounded-2xl'>
-			<div>
-				<MenuItem filteredMenu={filteredMenu}/>
+		<div className='bg-white w-full h-full rounded-2xl p-4'>
+			<div className='flex flex-wrap justify-center w-full h-full'>
+				<MenuItem filteredMenu={filteredMenu} />
 			</div>
 		</div>
 	)
