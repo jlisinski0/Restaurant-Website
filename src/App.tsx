@@ -1,6 +1,7 @@
 import Nav from './components/Nav/Nav'
 import Header from './components/Header/Header'
 import Menu from './components/Menu/Menu'
+import About from './components/About/About'
 
 function App() {
 	return (
@@ -9,6 +10,7 @@ function App() {
 			<Header />
 			<main>
 				<Menu />
+				<About/>
 			</main>
 		</>
 	)
