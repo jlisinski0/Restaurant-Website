@@ -4,7 +4,7 @@ interface MenuCategoryProps {
 	setIsSelectedCategory: (category: string) => void
 }
 
-export default function MenuCategory({ setIsSelectedCategory, isVisible}: MenuCategoryProps) {
+export default function MenuCategory({ setIsSelectedCategory}: MenuCategoryProps) {
 	return (
 		<>
 			<div className='w-full mt-2 h-48 bg-snowWhite rounded-2xl py-5 lg:h-full lg:mt-0 lg:py-3 '>
