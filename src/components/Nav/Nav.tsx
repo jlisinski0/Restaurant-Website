@@ -25,7 +25,10 @@ export default function Nav() {
 					<img className='w-5' src={logo} alt='logo (not my logo its etsy)' />
 				</a>
 				<div className={`flex justify-end lg:justify-center items-center h-full w-[50%]  lg:bg-white ${isScrolled ? 'lg:shadow-none' : 'lg:shadow-lg lg:shadow-black-50'} `}>
-					<button onClick={() => setIsMenuOpen(prev => !prev)} className='flex justify-center items-center cursor-pointer w-10 h-full lg:hidden '>
+					<button
+						onClick={() => setIsMenuOpen(prev => !prev)}
+						className='flex justify-center items-center cursor-pointer w-10 h-full lg:hidden'
+						aria-label={`${isMenuOpen ? 'Zamknij menu' : 'Otworz menu'}`}>
 						<div className='flex relative justify-center items-center -top-1 h-0.5 w-[40%] bg-black after:absolute after:bg-black after:top-1 after:w-full after:h-full'></div>
 					</button>
 					<div className='hidden lg:flex justify-center items-center w-full h-full'>
@@ -33,7 +36,9 @@ export default function Nav() {
 					</div>
 				</div>
 				<div className='hidden lg:flex lg: w-[25%] lg:justify-end'>
-					<a className='cursor-pointer font-medium px-12 py-2 border-2 border-accentTwo rounded-2xl hover:bg-accentTwo hover:text-white  duration-200 ease-in-out '>Zamów</a>
+					<a href='#Menu' className='cursor-pointer font-medium px-12 py-2 border-2 border-accentTwo rounded-[5px] hover:bg-accentTwo hover:text-white  duration-200 ease-in-out '>
+						Zamów
+					</a>
 				</div>
 			</div>
 

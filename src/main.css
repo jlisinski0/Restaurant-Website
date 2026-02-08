@@ -13,6 +13,7 @@ body {
 	--color-snowWhite: #ebe9ef;
 	--color-black: #121111;
 	--color-grey: #414040;
+	--color-btnColor: #020617;
 	--color-accentOne: #c3abed;
 	--color-accentTwo: #5b20c2;
 	--font-montserrat: 'Montserrat', sans-serif;
@@ -29,11 +30,11 @@ body {
 }
 
 .dotBackground {
-	background-image: radial-gradient(#5b20c2 0.5px, transparent 0.5px), radial-gradient(#5b20c2 0.5px, transparent 0.5px);
-	background-size: 25px 25px;
+	background-image: radial-gradient(#c3abed 1px, transparent 1px), radial-gradient(#c3abed 1px, transparent 1px);
+	background-size: 100px 100px;
 	background-position:
 		0 0,
-		12.5px 12.5px;
+		50px 50px;
 	background-color: #f7f6f6;
 }
 

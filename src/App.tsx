@@ -2,6 +2,7 @@ import Nav from './components/Nav/Nav'
 import Header from './components/Header/Header'
 import Menu from './components/Menu/Menu'
 import About from './components/About/About'
+import Faq from './components/Faq/Faq'
 
 function App() {
 	return (
@@ -10,7 +11,8 @@ function App() {
 			<Header />
 			<main>
 				<Menu />
-				<About/>
+				<About />
+				<Faq />
 			</main>
 		</>
 	)

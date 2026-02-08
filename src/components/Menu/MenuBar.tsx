@@ -15,7 +15,10 @@ export default function MenuBar({ setIsSelectedCategory }: MenuBarProps) {
 				<div className='w-full h-full hidden lg:flex'>
 					<MenuCategory setIsSelectedCategory={setIsSelectedCategory} />
 				</div>
-				<a className='cursor-pointer h-full w-[25%] flex items-center justify-end pr-4 lg:hidden' onClick={() => setIsVisible(prev => !prev)}>
+				<a
+					aria-label={`${isVisible ? 'Zamknij menu' : 'Otworz menu'}`}
+					className='cursor-pointer h-full w-[25%] flex items-center justify-end pr-4 lg:hidden'
+					onClick={() => setIsVisible(prev => !prev)}>
 					<img src={arrow} alt='strzałka w dół rozwijająca menu' className={`${isVisible ? 'transition-transform rotate-180' : 'rotate-0 transition-transform'}`} />
 				</a>
 			</nav>
