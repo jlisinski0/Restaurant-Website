@@ -40,4 +40,25 @@ export const menuList: MenuItem[] = [
 		cost: 65,
 		img: zurek,
 	},
+	{
+		id: 4,
+		category: 'Desery',
+		name: 'Żurek z jajkiem',
+		cost: 65,
+		img: zurek,
+	},
+	{
+		id: 4,
+		category: 'Desery',
+		name: 'Żurek z jajkiem',
+		cost: 65,
+		img: zurek,
+	},
+	{
+		id: 4,
+		category: 'Desery',
+		name: 'Żurek z jajkiem',
+		cost: 65,
+		img: zurek,
+	},
 ]

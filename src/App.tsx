@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import Menu from './components/Menu/Menu'
 import About from './components/About/About'
 import Faq from './components/Faq/Faq'
+import Footer from './components/Footer/Footer'
 
 function App() {
 	return (
@@ -14,6 +15,9 @@ function App() {
 				<About />
 				<Faq />
 			</main>
+			<footer>
+				<Footer/>
+			</footer>
 		</>
 	)
 }

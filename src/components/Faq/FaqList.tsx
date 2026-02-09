@@ -16,13 +16,15 @@ export default function FaqList() {
 		<>
 			{FaqItem.map((item, index) => (
 				<div className='px-5' key={index}>
-					<div className='flex justify-center items-center pb-3'>
-						<h3 className='text-xl'>{item.heading}</h3>
-						<button onClick={() => toggleItem(index)} className='cursor-pointer p-2' aria-label='Rozwnij i pokaż odpowiedź na pytanie'>
-							<img src={arrow} />
-						</button>
+					<div onClick={() => toggleItem(index)} className='flex flex-col justify-center items-center pb-3 cursor-pointer'>
+						<div className='flex items-center'>
+							<h3 className='text-xl'>{item.heading}</h3>
+							<button className='cursor-pointer p-2' aria-label='Rozwnij i pokaż odpowiedź na pytanie'>
+								<img className={`${isVisible[index] ? 'transition-transform rotate-180' : 'transition-transform rotate-0'}`} src={arrow} />
+							</button>
+						</div>
+						{isVisible[index] && <p className={`pt-10`}>{item.text}</p>}
 					</div>
-					{isVisible[index] && <p className='text-base'>{item.text}</p>}
 				</div>
 			))}
 		</>
