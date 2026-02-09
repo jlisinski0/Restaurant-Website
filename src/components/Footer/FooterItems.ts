@@ -25,3 +25,16 @@ export const FooterCenter = [
 		href: '#Lokalizacja',
 	},
 ]
+
+export const FooterRight = [
+	{
+		id: 1,
+		name: 'Regulamin',
+		href: '/Regulamin',
+	},
+	{
+		id: 2,
+		name: 'Polityka prywatności',
+		href: '/Polityka prywatności',
+	},
+]
