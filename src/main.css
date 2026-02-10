@@ -76,3 +76,26 @@ body {
 .color {
 	background-color: #414040;
 }
+
+.faq {
+	max-height: 0;
+	padding: 0 1.25em;
+	overflow: hidden;
+	pointer-events: none;
+	transition:
+		max-height 0.1s ease-in-out,
+		padding 0.1s ease-in-out;
+}
+
+.faq.open {
+	max-height: 200px;
+	pointer-events: auto;
+}
+
+.faq.closed {
+	max-height: 0;
+	transition:
+		max-height 0.1s ease-in-out,
+		padding 0.1s ease-in-out;
+	overflow: hidden;
+}

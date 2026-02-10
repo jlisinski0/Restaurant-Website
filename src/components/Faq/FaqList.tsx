@@ -23,7 +23,7 @@ export default function FaqList() {
 								<img className={`${isVisible[index] ? 'transition-transform rotate-180' : 'transition-transform rotate-0'}`} src={arrow} />
 							</button>
 						</div>
-						{isVisible[index] && <p className={`pt-10`}>{item.text}</p>}
+						<div className={`faq ${isVisible ? 'open' : 'closed'}`}>{isVisible[index] && <p className='pt-10'>{item.text}</p>}</div>
 					</div>
 				</div>
 			))}
