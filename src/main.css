@@ -79,6 +79,7 @@ body {
 
 .faq {
 	max-height: 0;
+	height: 120px;
 	padding: 0 1.25em;
 	overflow: hidden;
 	pointer-events: none;
