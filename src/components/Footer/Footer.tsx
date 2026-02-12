@@ -4,7 +4,7 @@ import FooterRight from './FooterRIght'
 
 export default function Footer() {
 	return (
-		<div className='min-h-[50vh] w-full bg-accentTwo pb-10'>
+		<div className='min-h-[30vh] w-full bg-accentTwo pb-10'>
 			<div className='flex flex-col lg:flex-row mx-auto max-w-300 text-white pt-20 text-center  justify-center md:pt-20'>
 				<div className='flex flex-col lg:pr-30'>
 					<h3 className='font-fjallaone text-4xl uppercase'>Restauracja</h3>

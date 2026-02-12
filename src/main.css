@@ -78,8 +78,9 @@ body {
 }
 
 .faq {
-	max-height: 0;
-	height: 120px;
+	text-align: center;
+	max-height: 200px;
+	height: 100px;
 	padding: 0 1.25em;
 	overflow: hidden;
 	pointer-events: none;
@@ -89,6 +90,7 @@ body {
 }
 
 .faq.open {
+	min-height: 50px;
 	max-height: 200px;
 	pointer-events: auto;
 }
