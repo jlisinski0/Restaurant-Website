@@ -11,11 +11,6 @@ export const navItem = [
 	},
 	{
 		id: 3,
-		href: '#Lokalizacja',
-		text: 'Lokalizacja',
-	},
-	{
-		id: 4,
 		href: '#Faq',
 		text: 'FAQ',
 	},
