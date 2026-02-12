@@ -2,6 +2,8 @@ import NavList from './NavList'
 import NavMobile from './NavMobile'
 import { useEffect, useState } from 'react'
 import logo from '/etsy.png'
+import shoppingBag from '/shopping-bag.svg'
+import { Link } from 'react-router-dom'
 
 export default function Nav() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,9 +23,9 @@ export default function Nav() {
 		<nav
 			className={` fixed h-16 w-screen font-montserrat z-20 shadow-lg shadow-black-50  bg-white lg:bg-transparent  ${isScrolled ? 'lg:bg-white lg:shadow-lg lg:shadow-black-50' : 'lg:bg-transparent lg:shadow-none'} `}>
 			<div className='flex justify-between items-center px-5 xl:px-0 max-w-300 m-auto h-full'>
-				<a href='#' className='cursor-pointer flex justify-start items-center h-full  w-[25%]'>
+				<Link to='/' className='cursor-pointer flex justify-start items-center h-full  w-[25%]'>
 					<img className='w-5' src={logo} alt='logo (not my logo its etsy)' />
-				</a>
+				</Link>
 				<div className={`flex justify-end lg:justify-center items-center h-full w-[50%]  lg:bg-white ${isScrolled ? 'lg:shadow-none' : 'lg:shadow-lg lg:shadow-black-50'} `}>
 					<button
 						onClick={() => setIsMenuOpen(prev => !prev)}
@@ -40,6 +42,9 @@ export default function Nav() {
 						Zamów
 					</a>
 				</div>
+				<Link to='/ShoppingCart'>
+					<img src={shoppingBag} alt='' />
+				</Link>
 			</div>
 
 			<div className={` bg-white w-full shadow-lg shadow-black-50 menu ${isMenuOpen ? 'open' : 'closed'}`}>
