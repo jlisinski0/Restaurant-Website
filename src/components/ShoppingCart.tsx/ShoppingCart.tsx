@@ -1,7 +1,9 @@
 export default function ShoppingCart() {
 	return (
-		<div className='h-screen'>
-			<h1>TEST</h1>
-		</div>
+		<section className='h-[65vh] pt-[70px] '>
+			<div className='flex justify-center items-center h-full'>
+				<h2 className='text-2xl'>Twój koszyk jest pusty</h2>
+			</div>
+		</section>
 	)
 }
