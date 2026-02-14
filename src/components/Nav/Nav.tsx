@@ -27,7 +27,7 @@ export default function Nav() {
 					<img className='w-5' src={logo} alt='logo (not my logo its etsy)' />
 				</Link>
 				<div className={`flex justify-end lg:justify-center items-center h-full w-[50%]  lg:bg-white ${isScrolled ? 'lg:shadow-none' : 'lg:shadow-lg lg:shadow-black-50'} `}>
-					<Link className='flex items-center px-2 lg:px-10 h-full lg:hidden' to='/ShoppingCart'>
+					<Link className='flex items-center px-2 lg:px-10 h-full lg:hidden' to='/Koszyk'>
 						<img src={shoppingBag} alt='' />
 					</Link>
 					<button
@@ -46,7 +46,7 @@ export default function Nav() {
 						Zamów
 					</a>
 				</div>
-				<Link className='hidden lg:flex items-center px-2 lg:px-10 h-full' to='/ShoppingCart'>
+				<Link className='hidden lg:flex items-center px-2 lg:px-10 h-full' to='/Koszyk'>
 					<img src={shoppingBag} alt='' />
 				</Link>
 			</div>

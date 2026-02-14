@@ -39,28 +39,28 @@ body {
 }
 
 .menu {
-	max-height: 0;
-	height: 200px;
-	padding: 0 1.25em;
+	display: grid;
+	grid-template-rows: 0fr;
 	overflow: hidden;
 	pointer-events: none;
 	transition:
-		max-height 0.1s ease-in-out,
+		grid-template-rows 0.1s ease-in-out,
 		padding 0.1s ease-in-out;
 }
 
 .menu.open {
 	padding-top: 0.8em;
 	padding-bottom: 1.5em;
-	max-height: 200px;
+	grid-template-rows: 1fr;
 	pointer-events: auto;
 }
 
 .menu.closed {
-	max-height: 0;
-	transition:
-		max-height 0.1s ease-in-out,
-		padding 0.1s ease-in-out;
+	grid-template-rows: 0fr;
+	pointer-events: none;
+}
+
+.menu > * {
 	overflow: hidden;
 }
 
@@ -78,27 +78,19 @@ body {
 }
 
 .faq {
-	text-align: center;
-	max-height: 200px;
-	height: 100px;
-	padding: 0 1.25em;
-	overflow: hidden;
-	pointer-events: none;
+	display: grid;
+	grid-template-rows: 0fr;
 	transition:
-		max-height 0.1s ease-in-out,
-		padding 0.1s ease-in-out;
+		grid-template-rows 0.2s ease-in-out,
+		padding 0.2s ease-in-out;
+	padding: 0 1.25em;
 }
 
 .faq.open {
-	min-height: 50px;
-	max-height: 200px;
-	pointer-events: auto;
+	grid-template-rows: 1fr;
+	padding: 0 1.25em;
 }
 
-.faq.closed {
-	max-height: 0;
-	transition:
-		max-height 0.1s ease-in-out,
-		padding 0.1s ease-in-out;
+.faq > * {
 	overflow: hidden;
 }
