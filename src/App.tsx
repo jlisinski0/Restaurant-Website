@@ -12,6 +12,7 @@ interface Product {
 	id: number
 	name: string
 	cost: number
+	img: string | any
 }
 
 interface CartContextType {
