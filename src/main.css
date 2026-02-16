@@ -20,6 +20,10 @@ body {
 	--font-fjallaone: 'Fjalla One', sans-serif;
 }
 
+.inputStyle {
+	@apply border border-white p-1 my-2 w-full text-sm md:text-lg  focus:outline-none focus:ring-2 focus:ring-accentTwo rounded-sm;
+}
+
 .accentGradient {
 	background: linear-gradient(135deg, #5b20c2 0%, #9776c6 40%);
 	color: transparent;

@@ -26,7 +26,7 @@ export default function MenuItem({ filteredMenu }: MenuItemProps) {
 				<div className='relative flex flex-col items-center justify-center bg-snowWhite p-2  w-full max-w-62.5 min-w-45 h-62.5 m-1 rounded-1xl' key={item.id}>
 					<img className='w-48 h-48' src={item.img} alt='' />
 					<button onClick={() => addToCard(item)} className='absolute cursor-pointer top-0 right-0 p-3 hover:scale-105 ease-in-out duration-100'>
-						<img src={shoppingBag} alt='Dodaj do koszyka' />
+						<img aria-label='Dodaj do koszyka' src={shoppingBag} alt='Dodaj do koszyka' />
 					</button>
 					<div className='flex w-full justify-between'>
 						<h3 className='pr-3.5 font-medium'>{item.name}</h3>
