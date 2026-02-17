@@ -23,11 +23,16 @@ export default function MenuItem({ filteredMenu }: MenuItemProps) {
 	return (
 		<>
 			{filteredMenu.map(item => (
-				<div className='relative flex flex-col items-center justify-center bg-snowWhite p-2  w-full max-w-62.5 min-w-45 h-62.5 m-1 rounded-1xl' key={item.id}>
+				<div
+					onClick={() => addToCard(item)}
+					className='relative flex flex-col items-center justify-center bg-snowWhite p-2  w-full max-w-62.5 min-w-45 h-62.5 m-1 rounded-1xl hover:scale-105 transition-transform duration-200 cursor-pointer'
+					key={item.id}>
 					<img className='w-48 h-48' src={item.img} alt='' />
-					<button onClick={() => addToCard(item)} className='absolute cursor-pointer top-0 right-0 p-3 hover:scale-105 ease-in-out duration-100'>
+
+					<div className='absolute cursor-pointer top-0 right-0 p-3 '>
 						<img aria-label='Dodaj do koszyka' src={shoppingBag} alt='Dodaj do koszyka' />
-					</button>
+					</div>
+
 					<div className='flex w-full justify-between'>
 						<h3 className='pr-3.5 font-medium'>{item.name}</h3>
 						<p className='text-accentTwo font-bold'>{item.cost}zł</p>

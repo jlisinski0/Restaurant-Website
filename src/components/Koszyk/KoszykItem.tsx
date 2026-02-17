@@ -5,16 +5,16 @@ export default function KoszykItem() {
 	const context = useContext(CartContext)
 
 	if (!context) {
-		throw new Error('blad')
+		throw new Error('Error')
 	}
 
 	const { cart } = context
 	return (
 		<>
 			{cart.map(item => (
-				<div className='flex items-start justify-between min-w-25 pb-2  max-w-75' key={item.id}>
+				<div className='flex items-start justify-between min-w-25 pb-2 w-full max-w-85' key={item.id}>
 					<div className='border-snowWhite border rounded-2xl  mr-1'>
-						<img className='flex items-center w-25 md:w-50' src={item.img} alt='' />
+						<img className='flex items-center w-25 md:w-40' src={item.img} alt='' />
 					</div>
 					<div className='flex items-center justify-between w-full h-full mx-5 text-sm'>
 						<div className='pr-2'>
