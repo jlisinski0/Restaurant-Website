@@ -11,8 +11,8 @@ export default function MenuBar({ setIsSelectedCategory }: MenuBarProps) {
 
 	return (
 		<div className='h-full w-full z-10'>
-			<nav className='flex justify-end items-center bg-snowWhite text-black h-full w-full  rounded-2xl'>
-				<div className='w-full h-full hidden lg:flex'>
+			<nav className='flex justify-end items-center bg-snowWhite text-black h-full w-full  rounded-2xl '>
+				<div className='hidden lg:flex w-full h-full items-center justify-center'>
 					<MenuCategory setIsSelectedCategory={setIsSelectedCategory} />
 				</div>
 				<button
@@ -22,7 +22,9 @@ export default function MenuBar({ setIsSelectedCategory }: MenuBarProps) {
 					<img src={arrow} alt='strzałka w dół rozwijająca menu' className={`${isVisible ? 'transition-transform rotate-180' : 'rotate-0 transition-transform'}`} />
 				</button>
 			</nav>
-			<MenuCategory className={`food ${isVisible ? 'open' : ''}`} setIsSelectedCategory={setIsSelectedCategory} />
+			<div className='lg:hidden'>
+				<MenuCategory className={`food ${isVisible ? 'open' : ''}`} setIsSelectedCategory={setIsSelectedCategory} />
+			</div>
 		</div>
 	)
 }

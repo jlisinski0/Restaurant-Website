@@ -8,9 +8,9 @@ interface MenuCategoryProps {
 export default function MenuCategory({ setIsSelectedCategory, className }: MenuCategoryProps) {
 	return (
 		<>
-			<div className={`w-full mt-2 bg-snowWhite rounded-2xl lg:h-full lg:mt-0 ${className ?? ''}`}>
-				<div className='flex flex-col px-5'>
-					<ul className='w-full lg:flex'>
+			<div className={`w-full mt-2 bg-snowWhite rounded-2xl lg:h-full lg:mt-0  ${className ?? ''}`}>
+				<div className='flex flex-col lg:pt-3'>
+					<ul className='w-full lg:flex p-5 lg:p-0'>
 						{categoryList.map((item, index) => {
 							return (
 								<li

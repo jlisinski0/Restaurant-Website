@@ -99,7 +99,6 @@ body {
 	overflow: hidden;
 }
 
-
 .food {
 	display: grid;
 	grid-template-rows: 0fr;
