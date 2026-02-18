@@ -98,3 +98,22 @@ body {
 .faq > * {
 	overflow: hidden;
 }
+
+
+.food {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition:
+		grid-template-rows 0.2s ease-in-out,
+		padding 0.2s ease-in-out;
+	padding: 0 1.25em;
+}
+
+.food.open {
+	grid-template-rows: 1fr;
+	padding: 0 1.25em;
+}
+
+.food > * {
+	overflow: hidden;
+}

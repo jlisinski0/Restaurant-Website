@@ -2,12 +2,13 @@ const categoryList = ['Obiady', 'Drinki', 'Desery']
 
 interface MenuCategoryProps {
 	setIsSelectedCategory: (category: string) => void
+	className?: string
 }
 
-export default function MenuCategory({ setIsSelectedCategory }: MenuCategoryProps) {
+export default function MenuCategory({ setIsSelectedCategory, className }: MenuCategoryProps) {
 	return (
 		<>
-			<div className='w-full mt-2 h-48 bg-snowWhite rounded-2xl py-5 lg:h-full lg:mt-0 lg:py-3 '>
+			<div className={`w-full mt-2 bg-snowWhite rounded-2xl lg:h-full lg:mt-0 ${className ?? ''}`}>
 				<div className='flex flex-col px-5'>
 					<ul className='w-full lg:flex'>
 						{categoryList.map((item, index) => {

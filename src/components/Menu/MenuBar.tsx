@@ -22,7 +22,7 @@ export default function MenuBar({ setIsSelectedCategory }: MenuBarProps) {
 					<img src={arrow} alt='strzałka w dół rozwijająca menu' className={`${isVisible ? 'transition-transform rotate-180' : 'rotate-0 transition-transform'}`} />
 				</button>
 			</nav>
-			{isVisible ? <MenuCategory setIsSelectedCategory={setIsSelectedCategory} /> : <></>}
+			<MenuCategory className={`food ${isVisible ? 'open' : ''}`} setIsSelectedCategory={setIsSelectedCategory} />
 		</div>
 	)
 }
