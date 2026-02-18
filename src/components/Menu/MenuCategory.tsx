@@ -16,6 +16,7 @@ export default function MenuCategory({ setIsSelectedCategory, className }: MenuC
 								<li
 									onClick={() => setIsSelectedCategory(item)}
 									key={index}
+									aria-live='polite'
 									className='flex justify-center cursor-pointer font-montserrat text-xl w-full hover:text-accentTwo hover:scale-115 ease-in-out duration-300'>
 									<button className='py-3 cursor-pointer lg:py-0'>{item}</button>
 								</li>
