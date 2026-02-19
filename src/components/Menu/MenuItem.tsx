@@ -25,7 +25,7 @@ export default function MenuItem({ filteredMenu }: MenuItemProps) {
 			{filteredMenu.map(item => (
 				<div
 					onClick={() => addToCard(item)}
-					className='relative flex flex-col items-center justify-center bg-snowWhite p-2  w-full max-w-62.5 min-w-45 h-62.5 m-1 rounded-1xl hover:scale-105 transition-transform duration-200 cursor-pointer'
+					className='relative flex flex-col items-center justify-center bg-snowWhite p-2  w-full max-w-62.5 min-w-45 h-62.5 m-1 rounded-1xl active:scale-95 transition-transform duration-200 cursor-pointer'
 					aria-live='polite'
 					key={item.id}>
 					<img className='w-48 h-48' src={item.img} alt={item.name} />

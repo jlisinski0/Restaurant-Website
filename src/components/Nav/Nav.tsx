@@ -1,6 +1,8 @@
 import NavList from './NavList'
 import NavMobile from './NavMobile'
 import { useEffect, useState } from 'react'
+import { useContext } from 'react'
+import { CartContext } from '../../App'
 import logo from '/etsy.png'
 import shoppingBag from '/shopping-bag.svg'
 import { Link } from 'react-router-dom'
@@ -8,6 +10,14 @@ import { Link } from 'react-router-dom'
 export default function Nav() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const [isScrolled, setIsScrolled] = useState(false)
+
+	const context = useContext(CartContext)
+
+	if (!context) {
+		throw new Error('MenuItem must be used within CartContext.Provider')
+	}
+
+	const { cart } = context
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -46,8 +56,11 @@ export default function Nav() {
 						Zamów
 					</a>
 				</div>
-				<Link className='hidden lg:flex items-center px-2 lg:px-10 h-full' to='/Koszyk'>
+				<Link className='relative hidden lg:flex items-center px-2 lg:px-10 h-full hover:scale-105 transition-transform duration-200' to='/Koszyk'>
 					<img src={shoppingBag} alt='' />
+					<div className='absolute top-3 right-12 '>
+						<span className='absolute flex items-center justify-center bg-red-500 w-5 h-5 rounded-full text-white font-bold text-sm'>{cart.length}</span>
+					</div>
 				</Link>
 			</div>
 
