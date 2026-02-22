@@ -16,7 +16,7 @@ export default function ShoppingCart() {
 		<section className='min-h-[80vh] py-20 flex flex-col justify-center items-center h-max-[1000vh]'>
 			<div className='flex flex-col justify-center items-center h-full w-full p-4  md:mx-auto md:min-w-75'>
 				<KoszykForm />
-				<div>
+				<div className='pt-10'>
 					<h2 className='flex justify-start text-xl font-medium pb-5 md:text-3xl'>Podsumowanie</h2>
 					{cart.length === 0 && <p className='text-sm md:text-xl text-center'>Koszyk jest pusty</p>}
 				</div>

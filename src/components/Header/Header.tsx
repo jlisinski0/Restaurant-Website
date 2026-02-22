@@ -1,4 +1,5 @@
 import SubText from './HeaderSubText'
+import Toast from '../Toast/Toast'
 
 export default function Header() {
 	return (
@@ -8,6 +9,7 @@ export default function Header() {
 					<h1 className='text-black font-fjallaone text-6xl uppercase max-w-[320px] md:text-8xl'>Restauracja Polskie potrawy</h1>
 				</div>
 				<SubText />
+				<Toast />
 			</div>
 		</header>
 	)

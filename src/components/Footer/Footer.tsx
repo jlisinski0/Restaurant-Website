@@ -12,7 +12,7 @@ export default function Footer() {
 						<FooterLeft />
 					</div>
 				</div>
-				<div className='flex flex-col items-center justify-center md:items-start md:flex-row  lg:items-center'>
+				<div className='flex flex-col items-center justify-center md:items-start md:flex-row  md:pt-8 lg:items-center lg:pt-0'>
 					<div className='flex flex-col md:px-10'>
 						<FooterCenter />
 					</div>

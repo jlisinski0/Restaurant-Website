@@ -39,6 +39,9 @@ export default function Nav() {
 				<div className={`flex justify-end lg:justify-center items-center h-full w-[50%]  lg:bg-white ${isScrolled ? 'lg:shadow-none' : 'lg:shadow-lg lg:shadow-black-50'} `}>
 					<Link className='flex items-center px-2 lg:px-10 h-full lg:hidden' to='/Koszyk'>
 						<img src={shoppingBag} alt='Koszyk' />
+						<div className='absolute top-3 right-20 '>
+							<span className='absolute flex items-center justify-center bg-red-500 w-5 h-5 rounded-full text-white font-bold text-sm'>{cart.length}</span>
+						</div>
 					</Link>
 					<button
 						onClick={() => setIsMenuOpen(prev => !prev)}

@@ -1,13 +1,21 @@
 import type { MenuItem as MenuItemType } from './MenuList'
 import shoppingBag from '/shopping-bag.svg'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { CartContext } from '../../App'
+
+
 
 interface MenuItemProps {
 	filteredMenu: MenuItemType[]
 }
 
 export default function MenuItem({ filteredMenu }: MenuItemProps) {
+
+	useEffect(() => {
+		
+	},[])
+
+
 	const context = useContext(CartContext)
 
 	if (!context) {
@@ -19,6 +27,7 @@ export default function MenuItem({ filteredMenu }: MenuItemProps) {
 	const addToCard = (product: MenuItemType) => {
 		setCart([...cart, product])
 	}
+
 
 	return (
 		<>
@@ -40,6 +49,7 @@ export default function MenuItem({ filteredMenu }: MenuItemProps) {
 					</div>
 				</div>
 			))}
+			
 		</>
 	)
 }
