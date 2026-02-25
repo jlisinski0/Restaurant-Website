@@ -18,6 +18,8 @@ interface Product {
 interface CartContextType {
 	cart: Product[]
 	setCart: Dispatch<SetStateAction<Product[]>>
+	showToast: boolean
+	addToCart: (product: Product) => void
 }
 
 export const CartContext = createContext<CartContextType | null>(null)
@@ -35,16 +37,22 @@ function HomePage() {
 
 function App() {
 	const [cart, setCart] = useState<Product[]>([])
+	const [showToast, setShowToast] = useState(false)
+
+	const addToCart = (product: Product) => {
+		setCart(prev => [...prev, product])
+		setShowToast(true)
+		setTimeout(() => setShowToast(false), 3000)
+	}
 
 	return (
-		<CartContext.Provider value={{ cart, setCart }}>
+		<CartContext.Provider value={{ cart, setCart, showToast, addToCart }}>
 			<BrowserRouter>
 				<Nav />
 
 				<main>
 					<Routes>
 						<Route path='/' element={<HomePage />} />
-
 						<Route path='/Koszyk' element={<Koszyk />} />
 					</Routes>
 				</main>

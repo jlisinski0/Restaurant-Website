@@ -4,7 +4,7 @@ export default function KoszykForm() {
 			<form>
 				<div>
 					<input className='inputStyle' type='text' required placeholder='Imię' autoComplete='given-name' />
-					<input className='inputStyle' type='text' required placeholder='Naziwsko' autoComplete='family-name' />
+					<input className='inputStyle' type='text' required placeholder='Nazwisko' autoComplete='family-name' />
 				</div>
 				<input className='inputStyle ' type='text' required placeholder='Ulica' autoComplete='street-address' />
 				<input className='inputStyle' type='text' required placeholder='Miasto' autoComplete='address-level2' />

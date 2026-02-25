@@ -8,7 +8,9 @@ export default function Toast() {
 		throw new Error('MenuItem must be used within CartContext.Provider')
 	}
 
-	const { cart } = context
+	const { cart, showToast } = context
+
+	if (!showToast) return null
 
 	return (
 		<div className='fixed top-20 flex justify-end w-full pr-10 max-w-300 z-20'>

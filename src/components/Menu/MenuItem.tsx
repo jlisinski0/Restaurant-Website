@@ -3,18 +3,12 @@ import shoppingBag from '/shopping-bag.svg'
 import { useContext, useEffect } from 'react'
 import { CartContext } from '../../App'
 
-
-
 interface MenuItemProps {
 	filteredMenu: MenuItemType[]
 }
 
 export default function MenuItem({ filteredMenu }: MenuItemProps) {
-
-	useEffect(() => {
-		
-	},[])
-
+	useEffect(() => {}, [])
 
 	const context = useContext(CartContext)
 
@@ -22,12 +16,11 @@ export default function MenuItem({ filteredMenu }: MenuItemProps) {
 		throw new Error('MenuItem must be used within CartContext.Provider')
 	}
 
-	const { cart, setCart } = context
+	const { addToCart } = context
 
 	const addToCard = (product: MenuItemType) => {
-		setCart([...cart, product])
+		addToCart(product)
 	}
-
 
 	return (
 		<>
@@ -49,7 +42,6 @@ export default function MenuItem({ filteredMenu }: MenuItemProps) {
 					</div>
 				</div>
 			))}
-			
 		</>
 	)
 }
