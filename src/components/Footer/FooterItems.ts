@@ -2,27 +2,27 @@ export const FooterCenter = [
 	{
 		id: 1,
 		name: 'Strona główna',
-		href: '#',
+		href: '/#',
 	},
 	{
 		id: 2,
 		name: 'Menu',
-		href: '#Menu',
+		href: '/#Menu',
 	},
 	{
 		id: 3,
 		name: 'O nas',
-		href: '#Onas',
+		href: '/#Onas',
 	},
 	{
 		id: 4,
 		name: 'FAQ',
-		href: '#Faq',
+		href: '/#Faq',
 	},
 	{
 		id: 5,
 		name: 'Lokalizacja',
-		href: '#Lokalizacja',
+		href: '/#Lokalizacja',
 	},
 ]
 
@@ -35,6 +35,6 @@ export const FooterRight = [
 	{
 		id: 2,
 		name: 'Polityka prywatności',
-		href: '/Polityka prywatności',
+		href: '/Polityka-prywatności',
 	},
 ]

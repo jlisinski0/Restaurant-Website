@@ -1,19 +1,19 @@
 export const navItem = [
 	{
 		id: 1,
-		href: '#Menu',
+		href: '/#Menu',
 		text: 'Menu',
 		to: '/Menu',
 	},
 	{
 		id: 2,
-		href: '#Onas',
+		href: '/#Onas',
 		text: 'O nas',
 		to: '/Onas',
 	},
 	{
 		id: 3,
-		href: '#Faq',
+		href: '/#Faq',
 		text: 'FAQ',
 		to: '/Faq',
 	},

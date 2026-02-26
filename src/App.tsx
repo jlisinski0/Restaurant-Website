@@ -7,6 +7,7 @@ import About from './components/About/About'
 import Faq from './components/Faq/Faq'
 import Footer from './components/Footer/Footer'
 import Koszyk from './components/Koszyk/Koszyk'
+import Rules from './components/Rules/Rules'
 
 interface Product {
 	id: number
@@ -54,6 +55,7 @@ function App() {
 					<Routes>
 						<Route path='/' element={<HomePage />} />
 						<Route path='/Koszyk' element={<Koszyk />} />
+						<Route path='/Regulamin' element={<Rules />} />
 					</Routes>
 				</main>
 

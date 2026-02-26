@@ -33,7 +33,7 @@ export default function Nav() {
 		<nav
 			className={` fixed h-16 w-screen font-montserrat z-20 shadow-lg shadow-black-50  bg-white lg:bg-transparent  ${isScrolled ? 'lg:bg-white lg:shadow-lg lg:shadow-black-50' : 'lg:bg-transparent lg:shadow-none'} `}>
 			<div className='flex justify-between items-center px-5 xl:px-0 max-w-300 m-auto h-full'>
-				<Link to='/' className='cursor-pointer flex justify-start items-center h-full  w-[25%]'>
+				<Link to='/#' className='cursor-pointer flex justify-start items-center h-full  w-[25%]'>
 					<img className='w-5' src={logo} alt='logo (nie moje logo, logo etsy)' />
 				</Link>
 				<div className={`flex justify-end lg:justify-center items-center h-full w-[50%]  lg:bg-white ${isScrolled ? 'lg:shadow-none' : 'lg:shadow-lg lg:shadow-black-50'} `}>
