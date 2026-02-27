@@ -19,11 +19,6 @@ export const FooterCenter = [
 		name: 'FAQ',
 		href: '/#Faq',
 	},
-	{
-		id: 5,
-		name: 'Lokalizacja',
-		href: '/#Lokalizacja',
-	},
 ]
 
 export const FooterRight = [

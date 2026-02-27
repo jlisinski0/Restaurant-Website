@@ -8,6 +8,7 @@ import Faq from './components/Faq/Faq'
 import Footer from './components/Footer/Footer'
 import Koszyk from './components/Koszyk/Koszyk'
 import Rules from './components/Rules/Rules'
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy'
 
 interface Product {
 	id: number
@@ -56,6 +57,7 @@ function App() {
 						<Route path='/' element={<HomePage />} />
 						<Route path='/Koszyk' element={<Koszyk />} />
 						<Route path='/Regulamin' element={<Rules />} />
+						<Route path='/Polityka-prywatności' element={<PrivacyPolicy />} />
 					</Routes>
 				</main>
 
